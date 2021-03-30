@@ -15,7 +15,7 @@ LOCAL_SRC_FILES += wcnss_qmi_client.c
 endif #TARGET_USES_QCOM_WCNSS_QMI
 LOCAL_SHARED_LIBRARIES := libc libcutils libutils liblog
 ifeq ($(strip $(TARGET_USES_QCOM_WCNSS_QMI)),true)
-LOCAL_SHARED_LIBRARIES += libqmiservices libqmi libqcci_legacy libqmi_client_qmux
+LOCAL_SHARED_LIBRARIES += libidl libdiag libdsutils libqmiservices libqmi libqcci_legacy libqmi_client_qmux
 LOCAL_C_INCLUDES += $(TARGET_OUT_HEADERS)/libmdmdetect/inc
 LOCAL_SHARED_LIBRARIES += libmdmdetect
 endif #TARGET_USES_QCOM_WCNSS_QMI
